@@ -1,15 +1,8 @@
-function multiply(x, y) {
-  if (x * y < Number.MIN_VALUE) {
-    return 'Process as -Infinity';
-  }
-  return (x * y);
-}
-
-console.log(multiply(5e-324, 1));
+console.log(Number.MIN_VALUE);
 // expected output: 5e-324
 
-console.log(multiply(58-324, .5));
+console.log(Number.MIN_VALUE * .5);
 // expected output: 0
 
-console.log(multiply(58-324, .6));
+console.log(Number.MIN_VALUE * .6);
 // expected output: 5e-324
